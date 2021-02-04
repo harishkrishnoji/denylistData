@@ -1,0 +1,14 @@
+image: python:latest
+stages:
+  - test
+
+test:
+  stage: test
+  tags:
+  - "jc-cmi"
+  #- "rundeck-lab"
+  script:
+    - echo test
+    - echo $(hostname) | mailx -s test harish.krishnoji@fiserv.com
+  only:
+    - master
