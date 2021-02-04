@@ -5,8 +5,9 @@ stages:
 test:
   stage: test
   tags:
-  - "jc-cmi"
-  #- "rundeck-lab"
+    - GIO_LAB_CONCURRENT
+  # - "jc-cmi"
+  # - "rundeck-lab"
   script:
     - echo test
     - echo $(hostname) | mailx -s test harish.krishnoji@fiserv.com
