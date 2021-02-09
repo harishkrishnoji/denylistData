@@ -1,5 +1,6 @@
 [
     {"addr": "1.2.3.4/32", "comments": "Test - Added new IP1"},
     {"addr": "1.2.3.5/32", "comments": "Test - Added new IP2"},
-    {"addr": "1.2.3.5/32", "comments": "Test - Added new IP3"}
+    {"addr": "1.2.3.5/32", "comments": "Test - Added new IP3"},
+    {"addr": "1.2.3.5/32", "comments": "Test - Added new IP4"}
 ]
