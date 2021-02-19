@@ -1,0 +1,12 @@
+---
+version: "3.8"
+services:
+  schema:
+    image: git-enterprise-jc.onefiserv.net:4443/ntc/docker/schema-enforcer:latest
+    volumes:
+      - ./:/usr/src/app/
+  yamllint:
+    image: sdesbure/yamllint
+    command: yamllint .
+    volumes:
+      - .:/yaml
