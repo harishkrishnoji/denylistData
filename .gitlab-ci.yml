@@ -6,7 +6,7 @@ stages:
 default:
   before_script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-    - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_TOKEN
+    # - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_TOKEN
   tags:
     - FTS_LAB_CONCURRENT
 
@@ -15,7 +15,7 @@ test:
   script:
     - docker-compose pull
     - docker-compose up --exit-code-from schema schema
-    - docker-compose up --exit-code-from yamllint yamllint
+    # - docker-compose up --exit-code-from yamllint yamllint
     # - echo test
     # - echo $(hostname) | mailx -s test harish.krishnoji@fiserv.com
     # - curl --request POST "http://rundeck-giolab.1dc.com:4440/api/35/webhook/enJT9CfLPoBA4ORxSeiFvDEb0k5jpFU6#silverline_cicd"
