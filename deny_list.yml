@@ -1,7 +1,7 @@
 ---
 #################################################################
 #                                                               #
-#       Each addr MUST have comments/notes under IPaddress      #
+#       Each addr MUST have comments/notes next to IPaddress    #
 #                                                               #
 #################################################################
 - addr: 1.2.3.1/32 # Test - Added new IP1
