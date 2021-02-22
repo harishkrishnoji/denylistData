@@ -2,6 +2,10 @@
 version: "3.8"
 services:
   schema:
+    command:
+      - validate
+      - --show-pass
+      - --strict
     image: git-enterprise-jc.onefiserv.net:4443/ntc/docker/schema-enforcer:latest
     volumes:
       - ./:/usr/src/app/
