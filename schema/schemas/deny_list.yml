@@ -9,7 +9,3 @@ items:
     addr:
       type: "string"
       format: "ipv4"
-  required:
-    - "addr"
-  uniqueItems: true
-  additionalProperties: false
