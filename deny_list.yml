@@ -1,4 +1,4 @@
-# jsonschema: "schemas/deny_list"
+# jsonschema: schemas/deny_list
 ---
 #################################################################
 #                                                               #
