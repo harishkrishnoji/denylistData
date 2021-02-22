@@ -5,7 +5,8 @@
 #       Each addr MUST have comments/notes next to IPaddress    #
 #                                                               #
 #################################################################
-- addr: 1.2.3.1/32 # Test - Added new IP1
-- addr: 1.2.3.2/32 # Test - Added new IP2
-- addr: 1.2.3.3/32 # Test - Added new IP3
-- add1: 1.2.3.3/32 # Test - Added new IP3
+deny_list:
+  - addr: 1.2.3.1/32 # Test - Added new IP1
+  - addr: 1.2.3.2/32 # Test - Added new IP2
+  - addr: 1.2.3.3/32 # Test - Added new IP3
+  - add1: 1.2.3.3/32 # Test - Added new IP3
