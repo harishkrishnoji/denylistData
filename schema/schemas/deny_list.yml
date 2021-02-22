@@ -12,3 +12,4 @@ properties:
         addr:
           type: "string"
           format: "ipv4"
+      uniqueItems: true
