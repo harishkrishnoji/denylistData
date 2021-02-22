@@ -15,7 +15,7 @@ test:
   script:
     - docker-compose pull
     - docker-compose up --exit-code-from schema schema
-    # - docker-compose up --exit-code-from yamllint yamllint
+    - docker-compose up --exit-code-from yamllint yamllint
     - echo test
     - echo $(hostname) | mailx -s test harish.krishnoji@fiserv.com
     # - curl --request POST "http://rundeck-giolab.1dc.com:4440/api/35/webhook/enJT9CfLPoBA4ORxSeiFvDEb0k5jpFU6#silverline_cicd"
