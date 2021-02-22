@@ -4,10 +4,12 @@ $id: "schemas/deny_list"
 description: "Deny List IPaddress schema."
 type: "array"
 items:
+  type: "object"
   properties:
     addr:
       type: "string"
       format: "ipv4"
   required:
     - "addr"
-additionalProperties: false
+  uniqueItems: true
+  additionalProperties: false
