@@ -1,5 +1,0 @@
-127.0.0.1/32            # Notes1
-143.244.46.216/32       # Bill testing IP
-143.244.46.216/32       # Bill testing IP1
-3.3.3.3/32              # harist test
-1.1.1.1/32              # test13
