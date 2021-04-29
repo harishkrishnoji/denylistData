@@ -19,4 +19,3 @@ services:
     build:
       context: .
       target: "inventory"
-    
