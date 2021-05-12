@@ -37,7 +37,7 @@ master:
     - docker tag $COMMIT_IMAGE $RELEASE_IMAGE
     # Push latest image
     - docker push $RELEASE_IMAGE
-    - curl --request POST "http://rundeck-giolab.1dc.com:4440/api/35/webhook/enJT9CfLPoBA4ORxSeiFvDEb0k5jpFU6#silverline_cicd"
+    - curl --request POST "http://rundeck-giolab.1dc.com:4440/api/38/webhook/o4PQNAdAy4C85FwlvIHF0HlBgsrSpUxI#DDOS-Denylist"
   only:
     - master
 
