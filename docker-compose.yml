@@ -14,3 +14,8 @@ services:
     command: yamllint .
     volumes:
       - .:/yaml
+  inventory:
+    image: ${COMMIT_IMAGE:-local/ddos-denylist-data:latest}
+    build:
+      context: .
+      target: "inventory"

@@ -1,7 +1,15 @@
 ---
 stages:
+  - test
+  - publish
   - master
   - clean
+
+variables:
+  RELEASE_IMAGE: ${CI_REGISTRY_IMAGE}:latest
+  COMMIT_IMAGE: ${CI_REGISTRY_IMAGE}:${CI_PIPELINE_ID}
+  # Unique image names for parallel builds
+  COMPOSE_PROJECT_NAME: ${CI_PROJECT_NAME}_${CI_PIPELINE_ID}
 
 default:
   before_script:
@@ -9,13 +17,29 @@ default:
   tags:
     - FTS_LAB_CONCURRENT
 
+publish:
+  stage: publish
+  script:
+    - docker-compose build inventory
+    # Push short sha tagged image
+    - docker push $COMMIT_IMAGE
+
+test:
+  stage: test
+  script:
+    - docker-compose pull schema yamllint
+    - docker-compose up --exit-code-from schema schema
+    - docker-compose up --exit-code-from yamllint yamllint
+
 master:
   stage: master
   script:
-    - docker-compose pull
-    - docker-compose up --exit-code-from schema schema
-    - docker-compose up --exit-code-from yamllint yamllint
+    - docker tag $COMMIT_IMAGE $RELEASE_IMAGE
+    # Push latest image
+    - docker push $RELEASE_IMAGE
     - curl --request POST "http://rundeck-giolab.1dc.com:4440/api/35/webhook/enJT9CfLPoBA4ORxSeiFvDEb0k5jpFU6#silverline_cicd"
+  only:
+    - master
 
 clean:
   stage: clean
