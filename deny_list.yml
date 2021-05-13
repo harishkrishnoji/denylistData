@@ -6,4 +6,5 @@
 #                                                               #
 #################################################################
 deny_list:
-  - addr: 91.149.244.205/32 # Bill Dolbow Home IP test
+  - addr: 91.149.244.205/32 # Bill Dolbow PIA DC
+  - addr: 46.246.122.88/32 # Bill' PIA Neitherland
