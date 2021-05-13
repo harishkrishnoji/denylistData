@@ -6,10 +6,4 @@
 #                                                               #
 #################################################################
 deny_list:
-  # - addr: 1.2.3.1/32 # Test - Added new IP1
-  # - addr: 1.2.3.2/32 # Test - Added new IP2
-  # - addr: 1.2.3.3/32 # Test - Added new IP3
-  - addr: 1.2.3.4/32 # Test - Added new IP3
-  - addr: 1.2.3.5/32 # Test - Added new IP4
-  - addr: 1.2.3.6/32 # Test - Added new IP5
-  - addr: 1.2.3.7/32 # Test - Added new IP7
+  - addr: 91.149.244.205/32 # Bill Dolbow Home IP for testing
