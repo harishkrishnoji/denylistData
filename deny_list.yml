@@ -6,5 +6,4 @@
 #                                                               #
 #################################################################
 deny_list:
-  - addr: 102.129.152.156/32 # Bill Dolbow (PIA) Private Internet Access US, FL
-  - addr: 188.126.94.108/32 # Bill Dolbow (PIA) Private Internet Access Denmark
+  - addr: 102.129.152.156/30 # Bill Dolbow (PIA) Private Internet Access US, FL
