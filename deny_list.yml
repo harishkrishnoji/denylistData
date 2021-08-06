@@ -7,4 +7,4 @@
 #################################################################
 deny_list:
   - addr: 102.129.153.160/30 # Bill Dolbow (PIA) Private Internet Access US, FL
-  - add: 154.21.114.10/32 # Bill Dolbow (PIA) Private Internet Access US, IL
+  - addr: 154.21
