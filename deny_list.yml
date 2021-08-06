@@ -6,5 +6,4 @@
 #                                                               #
 #################################################################
 deny_list:
-  - addr: 91.149.244.205/32 # Bill Dolbow PIA DC
-  - addr: 46.246.122.88/32 # Bill' PIA Neitherland
+  - addr: 102.129.152.156 # Bill Dolbow (PIA) Private Internet Access US, FL
