@@ -9,3 +9,4 @@ deny_list:
   - addr: 102.129.153.160/30 # Bill Dolbow (PIA) Private Internet Access US, FL
   - addr: 96.31.172.255/32 # Bill Dolbow - SolarWinds attacker test IP
   - addr: 96.31.172.25/32 # Bill Dolbow - SolarWinds attacker test IP1
+  - addr: 96.31.172.251/32 # Bill Dolbow - SolarWinds attacker test IP2
